@@ -5,6 +5,11 @@
  body, ul, header{
 	margin: 0;
 	padding:0;
+    color:deepskyblue;
+    background-size:100%;
+}
+body{
+    background-color:#ddd;
 }
 
 /**
@@ -17,13 +22,19 @@
     margin-bottom:50px;
 }
 .masthead_hd-ul{
-    margin-left:70%;
+    margin-left:60%;
     padding:10px;
 }
 .masthead_hd-li{
     list-style:none;
     display:inline;
+    margin:10px;
 }
+a{
+    text-decoration:none;
+    color:deepskyblue;
+}
+
 /**
 * ======Skip Links========
 * This makes the invisible 
@@ -31,16 +42,20 @@
 */
 
 .skip{
+    clip:rect(1px,1px,1px,1px);
     position:absolute;
-    clip: rect(1px,1px,1px,1px) 
+    right:0;
+    top:0;
+     
 }
 
-.skip:focus{
-    
+.skip:focus, .skip:active{
+    width:250px;
     position:absolute;
     top:0px;
+    right:0;
     padding:15px;
-    background-color:red;
+    background-color:#999;
     border:1px solid #333;
     
     
@@ -83,7 +98,7 @@
     padding-left:4.0%;
     padding-right:4.0%;
     float:left;
-    border:1px solid blue;
+    border:1px solid Tomato;
     background-color:#999;
 }
 .block_8up{
@@ -96,29 +111,33 @@
     padding-left:2.5%;
     padding-right:2.5%;
     float:left;
-    border:1px solid blue;
+    border:1px solid Tomato;
     background-color:#999;
 }
+/**
+* ======block========
+*  These are to Modify the block colours
+*/
 .block_red{
-    background-color:red;
+    background-color:#cc0000;
 }
 .block_blue{
-    background-color:blue;
+    background-color:#002fe6;
 }
 .block_orange{
-    background-color:orange;
+    background-color:#FF6600;
 }
 .block_purple{
-    background-color:pruple;
+    background-color:#551A8B;
 }
 .block_green{
-    background-color:green;
+    background-color:#54d632;
 }
 .block_white{
     background-color:white;
 }
 .block_black{
-    background-color:black;
+    background-color:#111;
 }
 
 /**
@@ -132,5 +151,6 @@
     bottom: 0;
     padding: 10px;
     text-align: center;
+    color:deepskyblue;
     
 }
