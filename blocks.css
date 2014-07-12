@@ -1,8 +1,29 @@
 /**
+* ======Body========
+* Reset
+*/
+ body, ul, header{
+	margin: 0;
+	padding:0;
+}
+
+/**
 * ======Masthead========
 * Will contain Header stuff
 */
-
+.masthead{
+    background-color:#222;
+    height:60px;
+    margin-bottom:50px;
+}
+.masthead_hd-ul{
+    margin-left:70%;
+    padding:10px;
+}
+.masthead_hd-li{
+    list-style:none;
+    display:inline;
+}
 /**
 * ======Skip Links========
 * This makes the invisible 
@@ -14,13 +35,15 @@
     clip: rect(1px,1px,1px,1px) 
 }
 
-.skip:active{
-    float:right;
+.skip:focus{
+    
+    position:absolute;
     top:0px;
     padding:15px;
     background-color:red;
     border:1px solid #333;
-    clip:none;
+    
+    
 }
 
 /**
@@ -102,3 +125,12 @@
 * ======Footer========
 * Will contain Footer stuff
 */
+.footer{
+    background-color:#222;
+    position: absolute;
+    width:100%;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    
+}
