@@ -27,10 +27,19 @@
 * ======Blocks========
 *   This is a Container
 */
-.blocks{
+.blocks_4up{
     width:75%;
     max-width:800px;
     min-width:350px;
+    margin:auto;
+    border:1px solid #555;
+    background-color:#222;
+    overflow:hidden;
+}
+.blocks_8up{
+    width:75%;
+    max-width:800px;
+    min-width:550px;
     margin:auto;
     border:1px solid #555;
     background-color:#222;
@@ -54,6 +63,19 @@
     border:1px solid blue;
     background-color:#999;
 }
+.block_8up{
+    margin-left:1.0%;
+    margin-right:0;
+    margin-top:10px;
+    margin-bottom:10px;
+    height:80px;
+    width:6.0%;
+    padding-left:2.5%;
+    padding-right:2.5%;
+    float:left;
+    border:1px solid blue;
+    background-color:#999;
+}
 .block_red{
     background-color:red;
 }
@@ -64,7 +86,7 @@
     background-color:orange;
 }
 .block_purple{
-    background-color:purple;
+    background-color:pruple;
 }
 .block_green{
     background-color:green;
