@@ -11,22 +11,70 @@
 
 .skip{
     position:absolute;
-    clip: rect(1px,1px,1px,1px)
+    clip: rect(1px,1px,1px,1px) 
 }
 
-.skip:focus{
-
+.skip:active{
+    float:right;
+    top:0px;
+    padding:15px;
+    background-color:red;
+    border:1px solid #333;
+    clip:none;
 }
 
 /**
 * ======Blocks========
 *   This is a Container
 */
+.blocks{
+    width:75%;
+    max-width:800px;
+    min-width:350px;
+    margin:auto;
+    border:1px solid #555;
+    background-color:#222;
+    overflow:hidden;
+}
 
 /**
 * ======block========
 *  These are the individual blocks
 */
+.block_4up{
+    margin-left:2.2%;
+    margin-right:0;
+    margin-top:10px;
+    margin-bottom:10px;
+    height:100px;
+    width:14.0%;
+    padding-left:4.0%;
+    padding-right:4.0%;
+    float:left;
+    border:1px solid blue;
+    background-color:#999;
+}
+.block_red{
+    background-color:red;
+}
+.block_blue{
+    background-color:blue;
+}
+.block_orange{
+    background-color:orange;
+}
+.block_purple{
+    background-color:purple;
+}
+.block_green{
+    background-color:green;
+}
+.block_white{
+    background-color:white;
+}
+.block_black{
+    background-color:black;
+}
 
 /**
 * ======Footer========
