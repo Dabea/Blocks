@@ -1,0 +1,34 @@
+/**
+* ======Masthead========
+* Will contain Header stuff
+*/
+
+/**
+* ======Skip Links========
+* This makes the invisible 
+* Also hopefully appear in the upright hand corner when they are selected
+*/
+
+.skip{
+    position:absolute;
+    clip: rect(1px,1px,1px,1px)
+}
+
+.skip:focus{
+
+}
+
+/**
+* ======Blocks========
+*   This is a Container
+*/
+
+/**
+* ======block========
+*  These are the individual blocks
+*/
+
+/**
+* ======Footer========
+* Will contain Footer stuff
+*/
