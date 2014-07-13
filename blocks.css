@@ -1,4 +1,27 @@
 /**
+* ======Colours for Document========
+* List of all the Colours Used          ||Hex Code/text used
+*Deep sky blue (text)                   ||deepskyblue
+*Light Gray (background for body)       ||#ddd
+*Light Black (Header/Footer/Blocks)     ||#222
+*Lighter Gray(BGC for Block/skip links) ||#999
+*Medium Gray (Border on Blocks)         ||#555
+*Orange/Red  (Outline on block)         ||Tomato
+*/
+
+/**
+* ======Colours for Block_Ext========
+*black       #111                  ==
+*blue        #002fe6;              ==
+*green       #54d632;              ==
+*orange      #FF6600;              ==
+*purple      #551A8B;              ==
+*red         #cc0000;              ==
+*white       #FFF;                 ==
+*/
+
+
+/**
 * ======Body========
 * Reset
 */
@@ -56,7 +79,7 @@ a{
     right:0;
     padding:15px;
     background-color:#999;
-    border:1px solid #333;
+    border:1px solid #555;
     
     
 }
@@ -118,11 +141,14 @@ a{
 * ======block========
 *  These are to Modify the block colours
 */
-.block_red{
-    background-color:#cc0000;
+.block_black{
+    background-color:#111;
 }
 .block_blue{
     background-color:#002fe6;
+}
+.block_green{
+    background-color:#54d632;
 }
 .block_orange{
     background-color:#FF6600;
@@ -130,16 +156,12 @@ a{
 .block_purple{
     background-color:#551A8B;
 }
-.block_green{
-    background-color:#54d632;
+.block_red{
+    background-color:#cc0000;
 }
 .block_white{
-    background-color:white;
+    background-color:#FFF;
 }
-.block_black{
-    background-color:#111;
-}
-
 /**
 * ======Footer========
 * Will contain Footer stuff
