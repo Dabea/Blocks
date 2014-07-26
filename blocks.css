@@ -17,6 +17,7 @@
 *orange      #FF6600;              ==
 *purple      #551A8B;              ==
 *red         #cc0000;              ==
+*yellow      #ffff32
 *white       #FFF;                 ==
 */
 
@@ -26,13 +27,24 @@
 * Reset
 */
  body, ul, header{
-	margin: 0;
-	padding:0;
-    color:deepskyblue;
     background-size:100%;
+    color:deepskyblue;
+    margin: 0;
+	padding:0;
 }
 body{
     background-color:#ddd;
+}
+h1{
+    display:none;
+}
+.clearfix:after{
+    content: " ";
+    display:block;
+    clear:both;
+    height:0;
+    font-size:0;
+    
 }
 
 /**
@@ -44,18 +56,18 @@ body{
     height:60px;
     margin-bottom:50px;
 }
-.masthead_hd-ul{
+.hlist{
     margin-left:60%;
     padding:10px;
 }
-.masthead_hd-li{
-    list-style:none;
+.hlist > li {
     display:inline;
+    list-style:none;
     margin:10px;
 }
 a{
-    text-decoration:none;
     color:deepskyblue;
+    text-decoration:none;
 }
 
 /**
@@ -73,69 +85,61 @@ a{
 }
 
 .skip:focus, .skip:active{
-    width:250px;
-    position:absolute;
-    top:0px;
-    right:0;
-    padding:15px;
     background-color:#999;
     border:1px solid #555;
-    
-    
+    position:absolute;
+    right:0;
+    top:0px;
+    padding:15px;
+    width:250px;
+
 }
 
 /**
 * ======Blocks========
 *   This is a Container
 */
-.blocks_4up{
+.blocks{
     width:75%;
     max-width:800px;
-    min-width:350px;
     margin:auto;
     border:1px solid #555;
     background-color:#222;
-    overflow:hidden;
+    
+}
+.blocks_4up{
+    min-width:350px;
 }
 .blocks_8up{
-    width:75%;
-    max-width:800px;
     min-width:550px;
-    margin:auto;
-    border:1px solid #555;
-    background-color:#222;
-    overflow:hidden;
-}
+ }
 
 /**
 * ======block========
 *  These are the individual blocks
 */
-.block_4up{
-    margin-left:2.2%;
+.blocks >*{
     margin-right:0;
     margin-top:10px;
     margin-bottom:10px;
-    height:100px;
-    width:14.0%;
-    padding-left:4.0%;
-    padding-right:4.0%;
     float:left;
     border:1px solid Tomato;
     background-color:#999;
 }
+.block_4up{
+    margin-left:2.2%;
+    height:100px;
+    width:14.0%;
+    padding-left:4.0%;
+    padding-right:4.0%;
+
+}
 .block_8up{
     margin-left:1.0%;
-    margin-right:0;
-    margin-top:10px;
-    margin-bottom:10px;
     height:80px;
     width:6.0%;
     padding-left:2.5%;
     padding-right:2.5%;
-    float:left;
-    border:1px solid Tomato;
-    background-color:#999;
 }
 /**
 * ======block========
@@ -158,6 +162,9 @@ a{
 }
 .block_red{
     background-color:#cc0000;
+}
+.block_yellow{
+    background-color:#ffff32;
 }
 .block_white{
     background-color:#FFF;
